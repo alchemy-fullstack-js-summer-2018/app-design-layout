@@ -1,6 +1,19 @@
 :local(.header) {
 
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+  }
   .header-title{
     font-family: 'Libre Franklin', sans-serif;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 3em;
+    // color: #ff7f5b;
+  }
+
+  .fas {
+    margin-top: 10px;
+    margin-right: 20px;
   }
 }

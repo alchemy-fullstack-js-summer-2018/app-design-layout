@@ -7,7 +7,10 @@ class Header extends Component {
   render() { 
     return (
       <header className={styles.header}>
-        <h1 className='header-title'>SAVR</h1>
+        <div className="header-container">
+          <h1 className='header-title'>SAVR</h1>
+          <i className="fas fa-bars fa-3x"></i>
+        </div>
         <nav>
           <Link to="/">Home</Link>
           <Link to="/About">About</Link>
