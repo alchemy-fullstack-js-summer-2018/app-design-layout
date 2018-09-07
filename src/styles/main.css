@@ -3,14 +3,24 @@
 * {
     box-sizing: border-box;
   }
+  h1 {
+    font-size: 3em;
+    font-family: 'Special Elite', cursive;
+  }
   
+  h2 {
+    font-size: 2em;
+    font-family: 'Special Elite', cursive;
+  }
+
+  p {
+      font-family: 'Open Sans', sans-serif;
+  }
+
   body {
     margin: 0;
-    overflow: hidden;
   }
   .page-container {
-    height: 100vh;
-    max-height: 100vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: min-content auto auto min-content;
@@ -30,13 +40,16 @@
   }
   pagehead {
       grid-area: phead;
+      max-height: 100px;
       border: 2px solid purple;
       display: flex;
       justify-content: center;
-        align-items: center;
+      align-items: center;
 
   }
   side {
     border: 1px solid blue;
     grid-area: sidebar;
+    justify-content: center;
+    align-items: center;
   }

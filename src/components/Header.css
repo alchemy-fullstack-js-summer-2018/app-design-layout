@@ -1,17 +1,38 @@
 :local(.header) {
     grid-area: header;
-    border: 1px solid red;
+    font-family: 'Open Sans', sans-serif;
+    
     nav {
         display: flex;
         justify-content: space-around;
         a { 
-            background: lime;
+            background: #333333;
             width: 100%;
+            color: #fff;
+            padding: 5px;
             text-align: center;
-            border: 2px solid olive;
+            text-decoration: none;
         }
+        a:hover {
+            color: yellow;
+        }
+        ul {
+            -webkit-padding-start: 0;
+        }
+        li {
+            list-style: none;
+            align-items: flex-end;
+            display: inline-flex;
+            min-width: 100px;
+        }
+        
     }
-    h1 {
-        margin: 0;
-    }
+            img {
+                width: 100px;
+                float: left;
+            }
+            
+            h1 {
+                padding-top: 30px;
+            }
 }

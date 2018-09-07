@@ -4,7 +4,9 @@ class Landing extends Component {
   render() {
     return (
       <div>
-        <h2>Notes App Home Page</h2>
+        <pagehead>
+          <h2>Manage Your Day Using Notes.</h2>
+        </pagehead>
         <p>Manage your notes</p>
       </div>
     );

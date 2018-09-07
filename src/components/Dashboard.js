@@ -63,14 +63,13 @@ class Dashboard extends Component {
     const { notes } = this.state;
 
     return (
-      <div>
+      <div className="page-container">
         <pagehead>
-          <h2>Dashboard Page</h2>
-          <p>contains notes list and note form</p>
+          <h2>Manage Your Life with Notes</h2>
         </pagehead>
 
         <notedisplay>
-          
+
           {notes &&
           <section>
             <h3>Notes</h3>

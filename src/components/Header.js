@@ -15,8 +15,8 @@ class Header extends Component {
       
         <div className="logo">
           <img src={logo}/>
+          <h1>Notes.app</h1>
         </div>
-        <h1>Welcome to Notes App</h1>
         <nav>
           <ul>
             <li>
