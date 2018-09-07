@@ -5,16 +5,20 @@
     nav {
         display: flex;
         justify-content: space-around;
+        background: #333333;
         a { 
             background: #333333;
             width: 100%;
+            border: 1px solid white;
             color: #fff;
+            margin-right: 10px;
             padding: 5px;
             text-align: center;
             text-decoration: none;
         }
         a:hover {
             color: yellow;
+            background: #706e6e;
         }
         ul {
             -webkit-padding-start: 0;
