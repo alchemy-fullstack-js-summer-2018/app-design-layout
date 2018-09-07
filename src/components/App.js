@@ -17,13 +17,16 @@ class App extends Component {
           </header>
 
           <main>
-            <h1 className="apph1">App is loading - css too if this is green</h1>
+           
+            {/* <h1 className="apph1">App is loading - css too if this is green</h1> */}
             <Switch>
               <Route exact path="/" component={Landing}/>
               <Route path="/dashboard" component={Dashboard}/>
               <Redirect to="/"/>
             </Switch>
+           
           </main>
+          
         </div>
       </Router>
     );

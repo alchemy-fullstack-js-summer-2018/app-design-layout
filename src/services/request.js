@@ -9,9 +9,7 @@ function request(url, options = {}, data) {
     });
 }
 
-const headers = {
-'content-type': 'application/json'
-};
+const headers = { 'content-type': 'application/json' };
 
 export const get = url => request(url);
 export const post = (url, data) => request(url, { method: 'POST', headers }, data);

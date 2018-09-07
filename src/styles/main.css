@@ -1,0 +1,42 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css);
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    overflow: hidden;
+  }
+  .page-container {
+    height: 100vh;
+    max-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: min-content auto auto min-content;
+    grid-template-areas: "header header header header"
+                         "phead phead phead phead"
+                         "sidebar content content content"
+                         "sidebar content content content"
+                         "sidebar content content content";
+  }
+  notedisplay {
+    grid-area: content;
+    border: 1px solid green;
+    overflow-y: scroll;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+  pagehead {
+      grid-area: phead;
+      border: 2px solid purple;
+      display: flex;
+      justify-content: center;
+        align-items: center;
+
+  }
+  side {
+    border: 1px solid blue;
+    grid-area: sidebar;
+  }

@@ -13,22 +13,20 @@ class Header extends Component {
     return (
       <div className={styles.header}>
       
-        <section className="header-container">
-          <div className="logo">
-            <img src={logo}/>
-          </div>
-          <h1>Welcome to Notes App</h1>
-          <nav>
-            <ul>
-              <li>
-                <NavLink exact activeClassName="active" to="/">Home</NavLink>
-              </li>
-              <li>
-                <NavLink exact activeClassName="active" to="/dashboard">Dashboard</NavLink>
-              </li>
-            </ul>
-          </nav>
-        </section>
+        <div className="logo">
+          <img src={logo}/>
+        </div>
+        <h1>Welcome to Notes App</h1>
+        <nav>
+          <ul>
+            <li>
+              <NavLink exact activeClassName="active" to="/">Home</NavLink>
+            </li>
+            <li>
+              <NavLink exact activeClassName="active" to="/dashboard">Dashboard</NavLink>
+            </li>
+          </ul>
+        </nav>
 
       </div>
     );

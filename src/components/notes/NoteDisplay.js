@@ -13,12 +13,13 @@ class Note extends Component {
     const { note, onEdit, onDelete } = this.props;
 
     return (
-      <p>
-        {note.title}
-        {note.content}
+      <div id="note">
+        <p>
+          {note.title}</p>
+        <p>{note.content}</p>
         <button name="edit" onClick={onEdit}>Edit</button>
-        <button name="delete" onClick={onDelete}>Delete</button>
-      </p>
+        <button name="delete" onClick={onDelete}>Delete</button>    
+      </div>
     );
   }
 }

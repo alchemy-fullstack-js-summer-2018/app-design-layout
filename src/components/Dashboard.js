@@ -62,17 +62,16 @@ class Dashboard extends Component {
 
     const { notes } = this.state;
 
-
     return (
       <div>
-        <h2>Dashboard Page</h2>
-        <p>contains notes list and note form</p>
-        <section>
-          <h3>Add a Note</h3>
-          <NoteForm onComplete={this.handleAdd}/>
-        </section>
+        <pagehead>
+          <h2>Dashboard Page</h2>
+          <p>contains notes list and note form</p>
+        </pagehead>
 
-        {notes &&
+        <notedisplay>
+          
+          {notes &&
           <section>
             <h3>Notes</h3>
             <Notes
@@ -81,8 +80,13 @@ class Dashboard extends Component {
               onRemove={this.handleRemove}
             />
           </section>  
-        }
+          }
+        </notedisplay>
 
+        <side>
+          <h3>Add a Note</h3>
+          <NoteForm onComplete={this.handleAdd}/>
+        </side>
       </div>
     );
   }
