@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
+import Footer from './Footer';
 import styles from './App.css';
 
 class App extends Component {
@@ -23,6 +24,10 @@ class App extends Component {
                 <Redirect to="/"/>
               </Switch>
             </main>
+
+            <footer>
+              <Footer/>
+            </footer>
           </div>
         </Fragment>
       </Router>
