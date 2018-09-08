@@ -1,10 +1,17 @@
 :local(.home) {
-  
+  // font-family: 'Fira Sans', sans-serif;
   font-family: 'Oswald', sans-serif;
   img {
     width: 90%;
     height: auto;
     align-content: center;
+    border-radius: 50%;
   } 
+  .thing {
+    background-color: pink;
+  }
+  h1 {
+    font-size: 40px;
+  }
 
 }

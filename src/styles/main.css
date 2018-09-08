@@ -1,2 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto|Righteous');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto|Righteous|Fira+Sans');
 
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  grid-area: main;
+}
+.sidebar {
+  grid-area: sb;
+}
+
+.home {
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+  "main main main sb"
+}
