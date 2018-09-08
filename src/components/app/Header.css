@@ -1,22 +1,54 @@
 :local(.header) {
 
-  display: flex;
-  font-family: 'Roboto', sans-serif;
-  justify-content: center;
+  width: 40%;
 
-  nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .menu-toggle {
+    display: block;
+    text-align: center;
+    text-align: center;
+    cursor: pointer;
   }
-  
-  ul {
-    list-style: none;
-    padding: 0px;
-    width: 200px;
+
+  .menu-content {
+    display: none;
+    flex-direction: column;
+    align-content: center;
+    background-color: white;
+    padding: 6px 0px 6px 0px;
+    a {
+      width: 100%;
+    }
+  }
+
+  nav:hover .menu-content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    a:hover {
+      background-color: #E8630A;
+    }
+  }
+
+  .menu-content {
+    a:hover {
+      color: #2B4353;
+      padding: 0px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .menu-toggle {
+      display: none;
+    }
+
+    .menu-content {
+      display: flex;
+      flex-direction: row;
+      background-color: #2B4353;
+      a {
+        margin: 6px;
+      }
+    }
+  
   }
 
 }

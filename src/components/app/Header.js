@@ -8,16 +8,20 @@ class Header extends Component {
 
     return (
       <div className={styles.header}>
-        <nav id="nav-ul">
-          <ul>
-            <li>
-              <NavLink
-                to="/"
-                style={{ color: '#2c3e50', textDecoration: 'none', fontWeight: 'bold' }} 
-                exact activeStyle={{ color: 'white', borderBottom: '2px solid #F4F9F4', fontWeight: 'bold' }}
-              >Home</NavLink>
-            </li>
-          </ul>
+        <nav>
+          <span className="menu-toggle">Menu</span>
+          <div className="menu-content">
+            <NavLink
+              to="/"
+              style={{ color: '#2B4353', textDecoration: 'none', fontWeight: 'bold' }} 
+              exact activeStyle={{ color: '#307672', fontWeight: 'bold' }}
+            >Home</NavLink>
+            <NavLink
+              to="/categories"
+              style={{ color: '#2B4353', textDecoration: 'none', fontWeight: 'bold' }} 
+              activeStyle={{ color: '#307672', fontWeight: 'bold' }}
+            >Categories</NavLink>
+          </div>
         </nav>
       </div>
     );
