@@ -1,47 +1,58 @@
 /* eslint-env node */
 const { resolve } = require('path');
-const CleanPlugin = require('clean-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
-// const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const buildDir = 'docs';
 const path = resolve(__dirname, buildDir);
 
 module.exports = {
-  // start here
   entry: './src/index.js',
-  // put the build output here (not dev server)
   output: {
     path,
     filename: 'bundle.[hash].js',
     publicPath: '/'
   },
-  // mode (will eventually be cmd line arg in package.json scripts)
   mode: 'development',
+  node: { 
+    fs: 'empty' 
+  },
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: `./${buildDir}`,
+    contentBase: './${buildDir}',
     historyApiFallback: true,
   },
   plugins: [
-    // add plugins
-    new CleanPlugin(`${path}/bundle.*.js`),
-    new HtmlPlugin({ template: './src/index.html' }),
-    // new CopyWebpackPlugin([{ from: './src/sprites', to: 'sprites' }])
+    new CleanWebpackPlugin(`${path}/bundle.*.js`),
+    new HtmlPlugin({ template: './src/index.html' })
   ],
   module: {
     rules: [
-      // js
       {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
-          options: { cacheDirectory: true }
+          options: {
+            presets: [
+              ['env', {
+                targets: {
+                  browsers: 'Chrome 65'
+                  // browsers: ['last 2 versions', 'safari >=7']
+                },
+              }],
+              'react'
+            ],
+            plugins: [
+              require('babel-plugin-transform-object-rest-spread'),
+              require('babel-plugin-transform-class-properties'),
+            ],
+            cacheDirectory: true
+          }
         }
       },
-
-      // css
+      
+      // css loader
       {
         test: /\.css$/,
         use: [
@@ -51,9 +62,9 @@ module.exports = {
           },
           {
             loader: 'css-loader',
-            options: { 
+            options: {
               sourceMap: true,
-              importLoaders: 1 
+              importLoaders: 1
             }
           },
           {
