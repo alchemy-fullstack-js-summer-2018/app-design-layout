@@ -30,7 +30,7 @@ class Stages extends Component {
             <p>Fountain of Dreams</p>
           </div>
           <div>
-            <img src={battlefield} alt="Battlefield"/>
+            <img src={stadium} alt="Pokemon Stadium"/>
             <p>Pokemon Stadium</p>
           </div>
           <div>
