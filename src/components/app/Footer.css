@@ -1,0 +1,6 @@
+:local(.footer) {
+color: gold;
+padding: 0 20px;
+border-top: 2px solid gold;
+border-bottom: 2px solid gold;
+}

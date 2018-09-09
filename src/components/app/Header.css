@@ -1,0 +1,40 @@
+:local(.header) {
+  grid-area: header;
+  background-color: black;
+  padding: 10px 20px;
+  border-bottom: 3px solid red;
+  nav {
+    display: flex;
+    justify-content: space-around;
+    a {
+      width: 100%;
+      text-align: center;
+    }
+
+    .reg-link {
+      background: red;
+      color: gold;
+      font-family: 'Righteous', cursive;
+      padding: 3px 4px;
+      border: 2px solid gold;
+      border-radius: 2px;
+      text-align: center;
+      height: min-content;
+      text-decoration: none;
+    }
+
+    .home-link {
+      margin-bottom: 10px;
+    }
+  }
+
+  .logo {
+    width: 200px;
+    height: 100px;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+  }
+}
