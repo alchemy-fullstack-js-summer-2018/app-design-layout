@@ -3,7 +3,7 @@
   border: 1px solid red;
   nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
   }
   h1 {
     margin: 0;

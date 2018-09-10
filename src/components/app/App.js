@@ -9,7 +9,7 @@ class App extends Component {
   render() { 
     return (
       <Router>
-        <div>
+        <div className="page-container">
           <header>
             <Header/>
           </header>

@@ -6,6 +6,18 @@ body {
   margin: 0;
 }
 
+.page-container {
+  height: 100vh;
+  max-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: min-content auto auto min-content;
+  grid-template-areas: "header header header header"
+                       "content content content sidebar"
+                       "content content content sidebar"
+                       "footer footer footer sidebar"
+}
+
 main {
   grid-area: content;
   border: 1px solid yellow;
