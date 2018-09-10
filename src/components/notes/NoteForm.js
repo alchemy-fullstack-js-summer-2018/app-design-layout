@@ -50,7 +50,7 @@ class NoteForm extends Component {
       <div className={styles.noteform}>
         <form onSubmit={this.handleSubmit}>
           <InputControl name="Title" value={title} onChange={this.handleChange}/>
-          <textarea name="content" rows="4" columns="60" value={content} onChange={this.handleChange}/>
+          <textarea name="Content" rows="4" columns="60" value={content} onChange={this.handleChange}/>
           <p>
             <button type="submit">{ key ? 'Update' : 'Add Note' }</button>
             {key && <button type="button" onClick={onCancel}>Cancel</button>}

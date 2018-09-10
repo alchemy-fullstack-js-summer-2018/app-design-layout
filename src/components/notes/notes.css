@@ -1,3 +1,19 @@
 :local(.note) {
+  p{
+    -webkit-margin-after: 6px;
+    -webkit-margin-before: 6px;
+  }
+ 
+  .notetitle {
+  font-family: 'Special Elite', cursive;
+  font-size: 1.3em;
+}
 
+.noteblock {
+  background: #f4eee2;
+  border: 1px solid #67696E;
+  padding: 15px;
+  margin: 5px;
+
+}
 }

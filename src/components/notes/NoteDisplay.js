@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import styles from "./notes.css";
+import styles from './notes.css';
 
 
 class Note extends Component {
@@ -21,14 +21,16 @@ class Note extends Component {
 
     return (
       <div className={styles.note}>
-      
-        <p>
-          {note.title}</p>
-        <p>{note.content}</p>
-        <input type="checkbox" checked={note.completed} onChange={this.onCompleted}/> Completed
-        <br/>
-        <button name="edit" onClick={onEdit}>Edit</button>
-        <button name="delete" onClick={onDelete}>Delete</button>    
+        <div className='noteblock'>
+        
+          <p className="notetitle">
+            {note.title}</p>
+          <p>{note.content}</p>
+          <input type="checkbox" checked={note.completed} onChange={this.onCompleted}/> Completed
+          <br/>
+          <button name="edit" onClick={onEdit}>Edit</button>
+          <button name="delete" onClick={onDelete}>Delete</button>  
+        </div>  
       </div>
     );
   }

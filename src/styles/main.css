@@ -62,6 +62,7 @@
     grid-area: sidebar;
     justify-content: center;
     padding-left: 10px;
+    max-width: 230px;
   }
 
   .landingcontent {
@@ -80,4 +81,10 @@
     font-family: 'Special Elite', cursive;
     font-weight: bold;
     font-size: 1.2em;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+
 }
