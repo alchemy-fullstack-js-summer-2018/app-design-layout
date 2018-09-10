@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-//import tunaGlamourShot from './../assets/tunaGlamourShot.jpg';
+import too_much_tuna from './../assets/too_much_tuna.jpg';
 //import ReactDOM from 'react-dom';
 //import PropTypes from 'prop-types';
 import {
@@ -52,6 +52,7 @@ class Dashboard extends PureComponent {
                 });
               }}
             />
+            
             <CSSTransition
               in={showValidationMessage}
               timeout={300}
@@ -72,7 +73,10 @@ class Dashboard extends PureComponent {
                     classNames="emoji"
                     unmountOnExit
                   >
-                    <div className="emoji">🐟</div>
+                    <div className="emoji">
+                      <p>🐟🐟🐟🐟🐟🐟</p>
+                      <img src={too_much_tuna}  />
+                    </div>
                   </CSSTransition>
                 </HelpBlock>
               )}
@@ -95,31 +99,30 @@ class Dashboard extends PureComponent {
       </Grid>
     );
   }
-
-
-  // render() {
-  //   return (
-  //     <section>
-  //       <h2>Track that tuna! dashboard</h2>
-  //       <div>
-  //         <img src={tunaGlamourShot}  />
-  //       </div>
-  //       <div>
-  //         <form onSubmit={this.handleSubmit}>
-  //           <input name="name" value={name} readOnly/>
-  //           <input name="budget" value={name} readOnly/>
-  //           <p>
-  //             <button type="submit">Add</button>
-  //           </p>
-  //         </form>
-  //       </div>
-  //     </section>
-  //   );
-  // }
 }
+export default Dashboard;
+// leaving this for now.
+// render() {
+//   return (
+//     <section>
+//       <h2>Track that tuna! dashboard</h2>
+//       <div>
+//         <img src={tunaGlamourShot}  />
+//       </div>
+//       <div>
+//         <form onSubmit={this.handleSubmit}>
+//           <input name="name" value={name} readOnly/>
+//           <input name="budget" value={name} readOnly/>
+//           <p>
+//             <button type="submit">Add</button>
+//           </p>
+//         </form>
+//       </div>
+//     </section>
+//   );
+// }
 
 // ReactDOM.render(
 //   <Dashboard />,
 //   document.getElementById('root')
 // );
-export default Dashboard;

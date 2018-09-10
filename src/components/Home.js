@@ -9,11 +9,11 @@ class Home extends PureComponent {
     return (
       <section className={styles.home}>
         <div className="main">
-          <section id="thing">
-            <h2>Track Your </h2>
-            <h1>Tuna</h1> 
-            <h2>Data.</h2>
-            <div>
+          <section className="thing">
+            <div className="text">
+              <h1>Track Your Tuna Data.</h1>
+            </div>
+            <div className="image">
               <img src={tunaGlamourShot}  />
             </div>
             <div>
