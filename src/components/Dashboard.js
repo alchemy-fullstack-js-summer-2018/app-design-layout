@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
-import tunaGlamourShot from './../assets/tunaGlamourShot.jpg';
-import ReactDOM from 'react-dom';
+//import tunaGlamourShot from './../assets/tunaGlamourShot.jpg';
+//import ReactDOM from 'react-dom';
 //import PropTypes from 'prop-types';
 import {
   Grid,
@@ -11,7 +11,7 @@ import {
   HelpBlock,
 } from 'react-bootstrap';
 import { CSSTransition } from 'react-transition-group';
-import styles from './Dashboard.css';
+//import styles from './Dashboard.css';
 
 
 class Dashboard extends PureComponent {
@@ -82,6 +82,7 @@ class Dashboard extends PureComponent {
         {showValidationButton ? (
           <Button
             onClick={() => {
+              // eslint-disable-next-line
               this.setState(state => ({
                 showValidationButton: false,
                 showValidationMessage: true,
