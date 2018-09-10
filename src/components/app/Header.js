@@ -9,7 +9,7 @@ class Header extends Component {
     return (
       <div className={styles.header}>
         <nav>
-          <span className="menu-toggle">Menu</span>
+          <span className="menu-toggle">Menu <i className="fas fa-bars"></i></span>
           <div className="menu-content">
             <NavLink
               to="/"
