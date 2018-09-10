@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import styles from "./notes.css";
 
 
 class Note extends Component {
@@ -19,7 +20,8 @@ class Note extends Component {
     const { note, onEdit, onDelete } = this.props;
 
     return (
-      <div id="note">
+      <div className={styles.note}>
+      
         <p>
           {note.title}</p>
         <p>{note.content}</p>
