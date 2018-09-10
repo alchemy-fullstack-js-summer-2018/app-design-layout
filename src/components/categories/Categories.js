@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Category from './Category';
 
 class Categories extends Component {
-  render() { 
+  static propTypes = {
+    categories: PropTypes.array.isRequired
+  };
+
+  render() {
+    const { categories } = this.props;
+    
     return (
       <ul>
-        {Categories.map(category => (
+        {categories.map(category => (
           <Category
             key={category.key}
             category={category}

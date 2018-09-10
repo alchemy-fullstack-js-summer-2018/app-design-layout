@@ -1,20 +1,37 @@
 [
   {
     "key": "abc",
-    "timestamp": "new Date()",
     "name": "entertainment",
     "budget": 300
   },
   {
     "key": "def",
-    "timestamp": "new Date()",
-    "name": "food",
+    "name": "groceries",
+    "budget": 500
+  },
+  {
+    "key": "123",
+    "name": "splurges",
+    "budget": 500
+  },
+  {
+    "key": "456",
+    "name": "restaurants",
+    "budget": 500
+  },
+  {
+    "key": "a78",
+    "name": "clothes",
+    "budget": 500
+  },
+  {
+    "key": "g90",
+    "name": "bike",
     "budget": 500
   },
   {
     "key": "ghi",
-    "timestamp": "new Date()",
-    "name": "transportation",
+    "name": "transit",
     "budget": 200
   }
 ]

@@ -7,16 +7,16 @@ class Header extends Component {
       <div>
         <section>
           <h1>My Budget</h1>
-          <na>
+          <nav>
             <ul>
               <li>
                 <NavLink exact activeClassName="active" to="/">Home</NavLink>
               </li>
               <li>
-                <NavLink exact activeClassName="active" to="/">Categories</NavLink>
+                <NavLink exact activeClassName="active" to="/categories">Categories</NavLink>
               </li>
             </ul>
-          </na>
+          </nav>
         </section>
       </div>
     );
