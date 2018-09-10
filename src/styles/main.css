@@ -35,22 +35,23 @@
                          "sidebar content content content"
                          "sidebar content content content";
   }
-  notedisplay {
+  .notedisplay {
     grid-area: content;
-    border: 1px solid green;
     background: #738d9c;
     overflow-y: scroll;
     display: flex; 
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    padding-left: 20px;
+    justify-content: space-between;
+
+    
   }
-  pagehead {
+  .pagehead {
       grid-area: phead;
       background: #f4eee2;
       max-height: 100px;
       display: flex;
       justify-content: center;
-      align-items: center;
 
   }
 
@@ -58,7 +59,7 @@
     width: 100%;
   }
 
-  side {
+  .side {
     grid-area: sidebar;
     justify-content: center;
     padding-left: 10px;

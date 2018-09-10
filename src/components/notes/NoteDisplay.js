@@ -26,8 +26,8 @@ class Note extends Component {
           <p className="notetitle">
             {note.title}</p>
           <p>{note.content}</p>
-          <input type="checkbox" checked={note.completed} onChange={this.onCompleted}/> Completed
-          <br/>
+          <input type="checkbox" checked={note.completed} onChange={this.onCompleted}/> Completed  
+          
           <button name="edit" onClick={onEdit}>Edit</button>
           <button name="delete" onClick={onDelete}>Delete</button>  
         </div>  

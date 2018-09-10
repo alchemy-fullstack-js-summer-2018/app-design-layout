@@ -64,11 +64,11 @@ class Dashboard extends Component {
 
     return (
       <div className="page-container">
-        <pagehead>
+        <section className="pagehead">
           <h2>Manage Your Life with Notes</h2>
-        </pagehead>
+        </section>
 
-        <notedisplay>
+        <section className="notedisplay">
 
           {notes &&
           <section>
@@ -80,12 +80,12 @@ class Dashboard extends Component {
             />
           </section>  
           }
-        </notedisplay>
+        </section>
 
-        <side>
+        <section className="side">
           <h3>Add a Note</h3>
           <NoteForm onComplete={this.handleAdd}/>
-        </side>
+        </section>
       </div>
     );
   }
