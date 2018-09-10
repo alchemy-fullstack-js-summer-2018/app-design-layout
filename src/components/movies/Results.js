@@ -10,7 +10,7 @@ class Results extends Component {
     state = { 
       movies: null,
       totalResults: 0,
-      perPage: 10,
+      perPage: 12,
       loading: false,
       error: null,
     };
@@ -86,7 +86,7 @@ class Results extends Component {
       const { searchTerm } = this;
 
       return (
-        <section>
+        <section className="mlist">
           {(loading || error) &&
             <section className="notifications">
               {loading && <div>Loading...</div>}
