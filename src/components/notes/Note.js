@@ -28,6 +28,13 @@ class Note extends Component {
     return onRemove(note.key);
   };
 
+  handleCompleted = note => {
+    const { onUpdate } = this.props;
+    const { completed } = note;
+    note.completed = !completed;
+    return onUpdate(note);
+  };
+
   handleComplete = note => {
     const { onUpdate } = this.props;
     return onUpdate(note).then(this.handleEndEdit);
@@ -49,6 +56,7 @@ class Note extends Component {
             note={note}
             onEdit={this.handleEdit}
             onDelete={this.handleDelete}
+            onComplete={this.handleCompleted}
           />
         }
       </li>

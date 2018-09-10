@@ -13,6 +13,11 @@
     font-family: 'Special Elite', cursive;
   }
 
+  h3 {
+    font-size: 1.5em;
+    font-family: 'Special Elite', cursive;
+  }
+
   p {
       font-family: 'Open Sans', sans-serif;
   }
@@ -40,6 +45,7 @@
   }
   pagehead {
       grid-area: phead;
+      background: #f4eee2;
       max-height: 100px;
       display: flex;
       justify-content: center;
@@ -52,10 +58,9 @@
   }
 
   side {
-    border: 1px solid blue;
     grid-area: sidebar;
     justify-content: center;
-    align-items: center;
+    padding-left: 10px;
   }
 
   .landingcontent {
