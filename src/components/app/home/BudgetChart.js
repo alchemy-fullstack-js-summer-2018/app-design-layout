@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Chart } from 'primereact/chart';
 import styles from './BudgetChart.css';
+import Categories from './categories/Categories';
 
 class BudgetChart extends Component {
   state = { 
@@ -20,7 +21,7 @@ class BudgetChart extends Component {
           '#E7E9ED',
           '#36A2EB'
         ],
-        label: 'My dataset'
+        label: 'Budget'
       }],
       labels: [
         'Rent',
@@ -36,8 +37,9 @@ class BudgetChart extends Component {
     return (
       <div className={styles.budgetChart}>
         <div className="content-section implementation">
-          <Chart type="polarArea" data={data} />
+          <Chart className="chart" type="bar" data={data} />
         </div>
+        <Categories/>
       </div>
     );
   }

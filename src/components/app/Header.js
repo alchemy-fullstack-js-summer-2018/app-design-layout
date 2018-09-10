@@ -8,7 +8,7 @@ class Header extends Component {
     return (
       <header className={styles.header}>
         <div className="header-container">
-          <h1 className='header-title'>SAVR</h1>
+          <h1 className='header-title'>SAV<span className="last-letter">R</span></h1>
           <i className="fas fa-bars fa-3x"></i>
         </div>
         <nav>

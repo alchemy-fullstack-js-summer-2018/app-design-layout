@@ -1,0 +1,8 @@
+:local(.categories) {
+  margin: 10px;
+
+  .categories-header-display {
+    display: flex;
+    justify-content: space-between
+  }
+}
