@@ -1,7 +1,6 @@
 :local(.home) {
 
 
-
   // font-family: 'Fira Sans', sans-serif;
   font-family: 'Oswald', sans-serif;
   img {
@@ -13,21 +12,20 @@
   .image {
     display: flex;
     justify-content:center;
+    margin-bottom: 10%;
   }
   .text {
     display: grid;
    
   }
   h1 {
-    font-size: 40px;
+    
     grid-row: 1;
     grid-column: 3 / span 2;
     align-content: center;
     font-size: 42px;
-  }
-  .sidebar {
-    background-color: purple;
-
+    margin-bottom: 8%;
+    padding-bottom: 0;
   }
 
 }

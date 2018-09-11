@@ -16,9 +16,6 @@ class Home extends PureComponent {
             <div className="image">
               <img src={tunaGlamourShot}  />
             </div>
-            <div>
-              <p className="sidebar">lalalalalal</p>
-            </div>
           </section>
         </div>
       </section>
