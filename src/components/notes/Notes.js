@@ -14,7 +14,7 @@ class Notes extends Component {
     const { notes, onUpdate, onRemove } = this.props;
 
     return (
-      // <ul> THIS IS THE CONTAINER FOR THE LIST FLEX ITEMS
+      <ul className="notedisplay"> 
         {notes.map(note => (
           <Note
             key={note.key}

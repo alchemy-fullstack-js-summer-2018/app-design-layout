@@ -43,8 +43,6 @@
     flex-direction: row;
     padding-left: 20px;
     justify-content: space-between;
-
-    
   }
   .pagehead {
       grid-area: phead;
@@ -64,6 +62,7 @@
     justify-content: center;
     padding-left: 10px;
     max-width: 230px;
+    min-height: 900px;
   }
 
   .landingcontent {
