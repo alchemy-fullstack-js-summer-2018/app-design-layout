@@ -1,0 +1,13 @@
+:local(.category) {
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  text-align: center;
+  background: #eee;
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
