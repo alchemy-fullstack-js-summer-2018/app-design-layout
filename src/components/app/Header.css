@@ -36,6 +36,8 @@
 
   @media only screen and (min-width: 768px) {
     /* For desktop: */
+    width: 10%;
+
     .menu-toggle {
       display: none;
     }

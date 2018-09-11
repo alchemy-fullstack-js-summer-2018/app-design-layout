@@ -13,12 +13,12 @@ class Header extends Component {
           <div className="menu-content">
             <NavLink
               to="/"
-              style={{ color: '#2B4353', textDecoration: 'none', fontWeight: 'bold' }} 
+              style={{ color: '#307672', textDecoration: 'none', fontWeight: 'bold' }} 
               exact activeStyle={{ color: '#307672', fontWeight: 'bold' }}
             >Home</NavLink>
             <NavLink
               to="/categories"
-              style={{ color: '#2B4353', textDecoration: 'none', fontWeight: 'bold' }} 
+              style={{ color: '#307672', textDecoration: 'none', fontWeight: 'bold' }} 
               activeStyle={{ color: '#307672', fontWeight: 'bold' }}
             >Categories</NavLink>
           </div>
