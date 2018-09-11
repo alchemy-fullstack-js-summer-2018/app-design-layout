@@ -1,0 +1,30 @@
+:local(.header) {
+  $brown: rgb(131, 110, 71);
+
+  a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    border-bottom: 2px solid $brown;
+  }
+
+  li {
+    border-left: 1px solid $brown;
+    width: 100%;
+    text-align: center;
+  }
+
+  li:hover {
+    background: white;
+    text-decoration: line-through;
+  }
+  
+}
