@@ -1,0 +1,17 @@
+:local(.favorite) {
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  text-align: center;
+  width: 250px;
+  height: 350px;
+  border-radius: 5px;
+
+  img {
+    width: 70%;
+    height: auto;
+  }
+}
