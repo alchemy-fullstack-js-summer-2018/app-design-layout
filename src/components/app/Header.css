@@ -1,0 +1,28 @@
+:local(.header) {
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-title{
+    font-family: 'Libre Franklin', sans-serif;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 3em;
+
+  }
+
+  .dropdown {
+    color: black;
+    background-color: white;
+  }
+  .fas {
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+
+  .last-letter {
+    color: #ff7f5b;
+    font-family: 'Libre Franklin', sans-serif;
+  }
+}
