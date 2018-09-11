@@ -4,6 +4,7 @@ import Header from './Header';
 import Home from './home/Home';
 import Contact from './Contact';
 import About from './About';
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 class App extends PureComponent {
 
