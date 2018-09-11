@@ -4,17 +4,37 @@
   background: yellow;
   text-align: center;
   nav {
-      display: flex;
+      
       justify-content: space-around;
       a { 
-          display: flex;
+          display:block;
           background: lime;
           width: 100%;
+          padding: 10px;
+          text-decoration: none;
           text-align: center;
           border: 2px solid olive;
+          font-size: 3ex;
       }
+  ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-position: inside;
+    margin:0;
+      padding: 0;
+  }    
+  li {
+      list-style-type: none;
+      list-style-position: inside;
+      margin:0;
+     
+      width: 100%;
+
+  }    
   }
   h1 {
       margin: 0;
+      padding: 25px;
+
   }
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './Header.css';
+import logo from '../../assets/budget-tool-icon.png';
 
 class Header extends Component {
   
@@ -15,7 +16,9 @@ class Header extends Component {
       <div className={styles.header}>
 
         <section className="header-container">
-          <div>
+          {/* <div> */}
+          <div className="logo">
+            <img src={logo} style={{ width: '100px' }}/>
           
             <h1>Budget Tracker</h1>
           </div>
@@ -28,7 +31,7 @@ class Header extends Component {
                 <NavLink to="/categories">Categories</NavLink>
               </li>
               <li>
-                <NavLink to="/">About</NavLink>
+                <NavLink to="/about">About</NavLink>
               </li>
               
             </ul>
