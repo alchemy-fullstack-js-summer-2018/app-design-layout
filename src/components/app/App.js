@@ -4,13 +4,14 @@ import Header from './Header';
 import Footer from './Footer';
 import Home from './Home';
 import Dashboard from '../categories/Dashboard';
+import styles from './Header.css';
 
 class App extends Component {
   render() { 
     return (
       <Router>
         <div className="page-container">
-          <header>
+          <header className={styles.header}>
             <Header/>
           </header>
           
@@ -21,6 +22,10 @@ class App extends Component {
               <Redirect to="/"/>
             </Switch>
           </main>
+
+          <aside>
+            SIDEBAR
+          </aside>
 
           <footer>
             <Footer/>
