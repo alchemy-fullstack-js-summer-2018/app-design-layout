@@ -1,0 +1,15 @@
+:local(.noteform) {
+  padding-right: 10px;
+
+  button { 
+    background: #333333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+button:hover {
+    color: yellow;
+    background: #706e6e;
+}
+}

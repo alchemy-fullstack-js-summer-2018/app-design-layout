@@ -1,0 +1,90 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css);
+
+* {
+    box-sizing: border-box;
+  }
+  h1 {
+    font-size: 3.2em;
+    font-family: 'Special Elite', cursive;
+  }
+  
+  h2 {
+    font-size: 2em;
+    font-family: 'Special Elite', cursive;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    font-family: 'Special Elite', cursive;
+  }
+
+  p {
+      font-family: 'Open Sans', sans-serif;
+  }
+
+  body {
+    margin: 0;
+  }
+  .page-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: min-content auto auto min-content;
+    grid-template-areas: "header header header header"
+                         "phead phead phead phead"
+                         "sidebar content content content"
+                         "sidebar content content content"
+                         "sidebar content content content";
+  }
+  .notedisplay {
+    grid-area: content;
+    background: #738d9c;
+    overflow-y: scroll;
+    display: flex; 
+    flex-direction: row;
+    padding-left: 20px;
+    justify-content: space-between;
+  }
+  .pagehead {
+      grid-area: phead;
+      background: #f4eee2;
+      max-height: 100px;
+      display: flex;
+      justify-content: center;
+
+  }
+
+  .landingcontent img {
+    width: 100%;
+  }
+
+  .side {
+    grid-area: sidebar;
+    justify-content: center;
+    padding-left: 10px;
+    max-width: 230px;
+    min-height: 900px;
+  }
+
+  .landingcontent {
+      text-align: center;
+  }
+
+
+  .landingcontent p {
+    font-size: 1.3em;
+    line-height: 1.5em;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.title {
+    font-family: 'Special Elite', cursive;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+
+}

@@ -1,0 +1,45 @@
+:local(.note) {
+  p{
+    -webkit-margin-after: 6px;
+    -webkit-margin-before: 6px;
+  }
+
+  button {
+    margin-left: 10px;
+  }
+ 
+  .notetitle {
+  font-family: 'Special Elite', cursive;
+  font-size: 1.3em;
+}
+
+.noteblock {
+  background: #f4eee2;
+  border: 1px solid #67696E;
+  max-width: 350px;
+  padding: 15px;
+  margin: 5px;
+  flex: 0 1 auto;
+
+}
+
+button { 
+  background: #333333;
+  color: #fff;
+  padding: 5px;
+  margin-top: 9px;
+  text-align: center;
+  text-decoration: none;
+}
+
+button:hover {
+  color: yellow;
+  background: #706e6e;
+}
+
+.checkboxstyle {
+  margin-left: 10px;
+  margin-top: 9px;
+}
+
+}
