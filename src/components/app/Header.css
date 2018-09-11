@@ -1,0 +1,56 @@
+:local(.header) {
+
+  width: 40%;
+
+  .menu-toggle {
+    display: block;
+    text-align: center;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .menu-content {
+    display: none;
+    flex-direction: column;
+    align-content: center;
+    background-color: white;
+    padding: 6px 0px 6px 0px;
+    a {
+      width: 100%;
+    }
+  }
+
+  nav:hover .menu-content {
+    display: flex;
+    a:hover {
+      background-color: #E8630A;
+    }
+  }
+
+  .menu-content {
+    a:hover {
+      color: #2B4353;
+      padding: 0px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    width: 10%;
+
+    .menu-toggle {
+      display: none;
+    }
+
+    .menu-content {
+      display: flex;
+      flex-direction: row;
+      background-color: #2B4353;
+      a {
+        margin: 6px;
+      }
+    }
+  
+  }
+
+}
