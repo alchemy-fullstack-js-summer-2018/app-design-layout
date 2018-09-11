@@ -1,0 +1,27 @@
+:local(.characters) {
+  height: 100%;
+  width: 100%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+  
+  .characters-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly
+  }
+
+  h2 {
+    text-align: center;
+
+  }
+
+  h4 {
+    margin: 0;
+  }
+
+  img {
+    margin: 7px;
+    border: 2px solid red;
+  }
+}
