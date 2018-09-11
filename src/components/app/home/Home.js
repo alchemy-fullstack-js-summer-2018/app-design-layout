@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
 import BudgetChart from './BudgetChart';
 import styles from './Home.css';
 

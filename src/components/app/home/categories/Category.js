@@ -13,7 +13,8 @@ class Category extends PureComponent {
     return (
       <div className={styles.category}>
         <p>{category.name}</p>
-        <p>{category.budget} // {category.youSpent}</p>
+
+        <p>{category.budget} / {category.youSpent}</p>
       </div>
     );
   }
