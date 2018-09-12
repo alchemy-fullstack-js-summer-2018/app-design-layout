@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import styles from './Amps.css';
 
 import hiwatt from '../../assets/hiwatt-dr103.jpg';
 import deluxe from '../../assets/1964-fender-deluxe-reverb.jpg';
@@ -14,7 +13,7 @@ export default class Amps extends Component {
   render() {
 
     return (
-      <div className={styles.header}>
+      <div>
         <section className="amps-container">
           <div>
             <h2>Hiwatt</h2>

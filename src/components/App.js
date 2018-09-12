@@ -4,8 +4,6 @@ import Header from './Header';
 import Home from './home/Home';
 import Amps from './amps/Amps';
 import About from './about/About';
-import styles from './App.css';
-
 
 class App extends PureComponent {
 
@@ -15,7 +13,7 @@ class App extends PureComponent {
       <Router>
         <div className="page-container">
           <Header/>
-          <main className={styles.app}>
+          <main>
             <Switch>
               <Route exact path="/" component={Home}/>
               <Route exact path="/amps" component={Amps}/>
