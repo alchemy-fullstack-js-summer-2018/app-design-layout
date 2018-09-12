@@ -27,10 +27,10 @@ class Header extends Component {
                 <Link to="/">Home</Link>
               </DropdownItem>
               <DropdownItem>
-                <Link to="/About">About</Link>
+                <Link to="/about">About</Link>
               </DropdownItem>
               <DropdownItem>
-                <Link to="/Contact">Contact</Link>
+                <Link to="/contact">Contact</Link>
               </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
