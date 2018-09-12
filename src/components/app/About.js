@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-// import PropTypes from 'prop-types';
 
 class About extends PureComponent {
   render() { 

@@ -9,7 +9,6 @@ class Header extends Component {
     dropdownOpen: false
   }
 
-  // this.toggle = this.toggle.bind(this);
 
   render() 
   { 
@@ -19,7 +18,6 @@ class Header extends Component {
           <h1 className='header-title'>SAV<span className="last-letter">R</span></h1>
           <UncontrolledDropdown color="link">
             <DropdownToggle caret>
-              {/* <i className="fas fa-bars fa-3x"/> */}
               Dropdown
             </DropdownToggle>
             <DropdownMenu>
