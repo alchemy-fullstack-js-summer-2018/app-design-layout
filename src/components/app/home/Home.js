@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
 import BudgetChart from './BudgetChart';
-import styles from './Home.css';
 
 class Home extends PureComponent {
   state = {
@@ -10,7 +9,7 @@ class Home extends PureComponent {
   render() { 
     const { totalSpending, totalBudget } = this.state;
     return (
-      <div className={styles.home}>
+      <div>
         <p>Your budget is: ${totalBudget}</p>
         <p>You have spent: ${totalSpending}</p>
         <BudgetChart/>
