@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Chart } from 'primereact/chart';
-import styles from './BudgetChart.css';
 import Categories from './categories/Categories';
 
 class BudgetChart extends Component {
@@ -35,7 +34,7 @@ class BudgetChart extends Component {
   render() { 
     const { data } = this.state;
     return (
-      <div className={styles.budgetChart}>
+      <div>
         <div className="content-section implementation">
           <Chart className="chart" type="bar" data={data} />
         </div>
